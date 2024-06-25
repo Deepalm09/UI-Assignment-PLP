@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Listing Page</title>
+  <link rel="stylesheet" href="styles.css">
+ <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header>
+
+    <div class="logo">VEINA</div>
+    <nav class="nav-bar">
+      <ul class="nav-menu">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Women</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
+		 <li class="nav-item"><a class="nav-link" href="#">Smart Gear</a></li>
+		  <li class="nav-item"><a class="nav-link" href="#">Accessories</a></li>
+      </ul>
+	  <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+    <div class="cart-icon">
+     <i class="fas fa-shopping-bag"></i>
+    </div>
+  </header>
+  <section class="banner">
+    <div class="banner-caption">
+      <h2>Men's Outerwear</h2>
+    
+    </div>
+    <div class="banner-image">
+      <img src="./asset/brand5.jpg" alt="Banner">
+    </div>
+  </section>
+  <section class="search-sorting">
+   <div class="search-filter-container">
+    <input type="text" id="search" placeholder="Search for products...">
+  </div>
+ 
+  <div class="sort">
+      <select id="sort" aria-label="Sort products">
+        <option value="">Sort by Price</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+      </select>
+  </div>
+  </section>
+  <main>
+ 
+    <aside class="filters">
+	<h2>Filters</h2>
+	<div class="category-div">
+	<h3>Categories</h3>
+      
+      <div id="category-filter"></div>
+     </div>
+    </aside>
+    <section id="product-list" class="products">
+	 
+      <div id="loading" class="shimmer-wrapper">
+        <div class="shimmer"></div>
+        <div class="shimmer"></div>
+        <div class="shimmer"></div>
+        <div class="shimmer"></div>
+        <div class="shimmer"></div>
+        <div class="shimmer"></div>
+      </div>
+    </section>
+  </main>
+  <button id="load-more">Load More</button>
+  <footer>
+  <div class="footer-wrapper">
+    <div class="footer-content">
+	
+      <div class="footer-section links">
+        <h3>Account</h3>
+        <ul>
+          <li><a href="#">Sign In</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="#">Order Status</a></li>
+        </ul>
+      </div>
+      <div class="footer-section links">
+        <h3>About Us</h3>
+        <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Careers</a></li>
+       
+        </ul>
+      </div>
+      <div class="footer-section links">
+        <h3>Help</h3>
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Order Status</a></li>
+		  <li><a href="#">Returns</a></li>
+        </ul>
+      </div>
+	   <div class="footer-section links">
+        <h3>Follow us!</h3>
+        <p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+		</p>
+		<div class="social-icons">
+		<ul>
+		<li> <a href="#"> <img src="./asset/instagram.svg" alt="instagram"></a></li>
+		<li> <a href="#"> <img src="./asset/twitter.svg" alt="instagram"></a></li>
+		<li> <a href="#"> <img src="./asset/facebook.svg" alt="instagram"></a></li>
+		</ul>
+		</div>
+      </div>
+    </div>
+	</div>
+    <div class="footer-bottom">
+     <div><h3>VEINA</h3></div>
+	 <div> <p>© Company Name Address Ave, City Name, State ZIP</p></div>
+	 <div class="bottom-section">
+	 <ul>
+	 <li><a href="#">Terms of use</a></li>
+     <li><a href="#">Privacy Policy</a></li>
+	 </ul>
+	 </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
